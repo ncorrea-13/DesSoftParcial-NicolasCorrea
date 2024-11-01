@@ -25,10 +25,15 @@ Soy Nicolás Correa, estudiante de Ingeniería en Sistemas de Información. Este
    - Acceda al contenedor usando:
 https://parcialbackdesarrollo.onrender.com
 
+   - O descargando el repositorio de GitHub y abriendolo con Intellij IDEA
+
 2. **Endpoints Principales**:
    - **POST** `/mutant`: Verifica si una secuencia de ADN pertenece a un mutante.
    - **GET** `/stats`: Obtiene estadísticas sobre las secuencias procesadas.
 
+3. **Test Automaticos**:
+   - Puede realizar un conjunto de test automáticos ejecutando en local el comando
+gradle build jacocoTestReport
 
 # Ejemplo de solicitud en Postman
 - Cree la solicitud POST en Postman
