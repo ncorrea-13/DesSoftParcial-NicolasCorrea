@@ -2,14 +2,12 @@ package org.example.parcialuno.services;
 
 import org.example.parcialuno.dto.DtoDnaInput;
 import org.example.parcialuno.repositories.DnaRepository;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.mockito.Mockito.*;
 
-import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -28,23 +26,18 @@ public class MutantServiceTest {
     @MockBean
     private DnaRepository dnaRepository;
 
-    @BeforeEach
-    public void setUp() {
-        MockitoAnnotations.initMocks(this);
-    }
-
     // ====================================================================================================
     // Tests cubriendo todas las secuencias de matriz 6x6
     @Test
     public void testRows() throws Exception {
         DtoDnaInput dna = new DtoDnaInput();
         dna.setDna(List.of(
-                "ATGCGA",
-                "CAGTGC",
-                "TTATGT",
-                "AGAAGG",
-                "CCTCTA",
-                "TCACTG"
+                "AAAATG",
+                "TGCAGT",
+                "GCTTCC",
+                "CCCCTG",
+                "GTAGTC",
+                "AGTCAC"
         ));
 
         // Configurar el mock para llamar al método real

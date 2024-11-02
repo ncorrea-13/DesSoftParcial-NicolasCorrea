@@ -62,7 +62,7 @@ public class MutantService {
             }
         }
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 2; i++) {
             count = verificacionDiagonalDerecha(dna) ? count + 1  : count;
             count = verificacionDiagonalIzquierda(dna) ? count + 1  : count;
         }
