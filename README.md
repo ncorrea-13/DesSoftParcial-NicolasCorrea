@@ -23,7 +23,7 @@ Soy Nicolás Correa, estudiante de Ingeniería en Sistemas de Información. Este
 
 1. **Iniciación**:
    - Acceda al contenedor usando:
-https://parcialbackdesarrollo.onrender.com
+https://dessoftparcial-nicolascorrea.onrender.com/stats
 
    - O descargando el repositorio de GitHub y abriendolo con Intellij IDEA
 
@@ -37,7 +37,7 @@ gradle build jacocoTestReport
 
 # Ejemplo de solicitud en Postman
 - Cree la solicitud POST en Postman
-- Ingresa la URL de la API en render: https://parcialbackdesarrollo.onrender.com/mutant
+- Ingresa la URL de la API en render: https://dessoftparcial-nicolascorrea.onrender.com/stats
 - En el Body, utilize raw y JSON. Luego ingrese:
 {
   "dna": [ "AAAA", "CCCC", "TGAC", "GGTC" ]
